@@ -33,6 +33,19 @@ public class Drivetrain extends SubsystemBase {
     backPortDriveMotor.setInverted(true);
   }
 
+  /**
+   * drives the robot using a value for each side
+   * @author Dylan
+   * @param port (number from -1 to 1)
+   * @param starboard (number from -1 to 1)
+   */
+  public void tankDrive(double port, double starboard) {
+    frontPortDriveMotor.set(port);
+    backPortDriveMotor.set(port);
+    frontStarboardDriveMotor.set(starboard);
+    backStarboardDriveMotor.set(starboard);
+  }
+
   @Override
   public void periodic() {
     // This method will be called once per scheduler run
