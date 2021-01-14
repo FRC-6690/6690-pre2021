@@ -18,6 +18,11 @@ public final class Constants {
         public static final int frontPortDriveMotor = 1;        // configured never
         public static final int backStarboardDriveMotor = 2;    // configured never   
         public static final int backPortDriveMotor = 3;         // configured never
+    }
 
+    public static final class DriverSettings{
+        public static final int USB_Adress = 0;     // configured never
+        public static final int port_axis = 0;      // configured never
+        public static final int starboard_axis = 0; // configured never
     }
 }
